@@ -52,10 +52,10 @@ cask "brave-browser"
 cask "chromium"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Tool to hide status bar icons
-cask "dozer"
 # Web browser
 cask "firefox"
+# Utility to hide menu bar items
+cask "hiddenbar"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Explorer for Azure Storage
