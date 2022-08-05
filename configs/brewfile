@@ -1,0 +1,101 @@
+##### EXAMPLES #####
+# Install: brew bundle install --no-lock
+# Sync system with brewfile: brew bundle --force cleanup
+# Create new brewfile from existing system: brew bundle dump --describe
+
+####################
+
+cask_args appdir: "/Applications"
+
+# taps
+tap "azure/functions"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "snyk/tap"
+
+### BREWS ###
+
+# Run your GitHub Actions locally 🚀
+#brew "act"
+# Official Amazon AWS command-line interface
+#brew "awscli"
+# Tool to measure maximum TCP and UDP bandwidth
+#brew "iperf"
+# Play, record, convert, and stream audio and video
+#brew "ffmpeg" # used by yt-dlp
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
+# Mac App Store command-line interface
+brew "mas"
+# Internet file retriever
+#brew "wget"
+# Fork of youtube-dl with additional features and fixes
+#brew "yt-dlp"
+# Azure Functions Core Tools 4.0
+#brew "azure/functions/azure-functions-core-tools@4"
+# Find & fix known vulnerabilities in open-source dependencies
+#brew "snyk/tap/snyk"
+
+### CASKS ###
+
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Application uninstaller
+cask "appcleaner"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Free and open-source web browser
+cask "chromium"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Tool to hide status bar icons
+cask "dozer"
+# Web browser
+cask "firefox"
+# Provides updates to various Microsoft products
+cask "microsoft-auto-update"
+# Explorer for Azure Storage
+cask "microsoft-azure-storage-explorer"
+# Spreadsheet software
+#cask "microsoft-excel"
+# Email client
+#cask "microsoft-outlook"
+# Remote desktop client
+cask "microsoft-remote-desktop"
+# Meet, chat, call, and collaborate in just one place
+#cask "microsoft-teams"
+#cask "microsoft-word"
+# Cloud storage client
+#cask "onedrive"
+# Desktop virtualization software
+#cask "parallels"
+# Home media player
+#cask "plex"
+# Collaboration platform for API development
+cask "postman"
+# Command-line shell and scripting language
+cask "powershell"
+# Centralizes all remote connections on a single platform
+#cask "remote-desktop-manager"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+#cask "vlc"
+
+### EXTRAS ###
+
+# Browser for SQLite databases
+#cask "db-browser-for-sqlite-nightly"
+
+
+### SOFTWARE NOT AVAILABLE IN BREW ###
+# Microsoft OneNote
+# Snagit
+# Pulse Secure
+# Tailscale
