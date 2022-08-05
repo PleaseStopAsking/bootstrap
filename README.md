@@ -74,6 +74,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Import Bookmarks
   - Install extensions
     - 1Password
+    - My Apps Secure Sign-in Extension
   - Enable SSO
   
     ```bash
