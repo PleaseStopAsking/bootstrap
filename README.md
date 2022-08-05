@@ -19,17 +19,22 @@ When complete, there are a handful of remaining tasks left to complete manually 
 ### Sign-in & Configure
 
 - 1Password
+
 - Configure accounts
   - System Preferences > Internet Accounts
     - Apple ID
     - Email Provider
       - enable mail, notes and reminders
+
 - Install SF Mono font
   - <https://developer.apple.com/fonts/>
+
 - Rectangle
   - Import config from [here](/configs/RectangleConfig.json)
-- Dozer
+
+- Hidden Bar
   - Move icons as necessary
+
 - Configure misc settings
   - System Preferences > General
     - Prefer Tabs: always
@@ -37,6 +42,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
     - Control Center
   - Extensions
     - Remove unused
+
 - Setup PowerShell
 
   ```powershell
@@ -45,32 +51,57 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - VSCode
   - Sign-in via GitHub to sync settings and extensions
+
 - Docker
   - Sign-in to DockerHub
   - Enable experimental features
   - Enable auto download of updates
   - Enable Compose V2
+
 - Remote Desktop Connection
   - Credentials
   - Gateways
   - Hosts
+
 - Safari
   - Settings
   - Install extensions
     - 1Password
     - Capitol One Eno
+
 - Brave Browser
   - Settings
+  - Import Bookmarks
   - Install extensions
     - 1Password
-    - Capitol One Eno
   - Enable SSO
   
-      ```bash
-      # create kerberos ticket
-      init user@example.com
+    ```bash
+    # variables
+    DOMAINS="*.example.com, example.okta.com"
+    USER="user@example.com"
 
-      # configure brave allowlists
-      defaults write com.brave.Browser AuthNegotiateDelegateAllowlist "*.example.com, example.okta.com"
-      defaults write com.brave.Browser AuthServerAllowlist "*.example.com, example.okta.com"
-      ```
+    # create kerberos ticket
+    kinit $USER
+
+    # configure brave allowlists
+    defaults write com.brave.Browser AuthNegotiateDelegateAllowlist $DOMAINS
+    defaults write com.brave.Browser AuthServerAllowlist $DOMAINS
+    ```
+
+- Setup Azure access
+
+  ```powershell
+  Connect-AzAccount
+
+  # rename contexts to easier to use names as necessary
+  Rename-AzContext -SourceName 'preChange' -TargetName 'postChange'
+
+  ```
+
+- Setup AWS access
+
+  ```powershell
+  # create profiles for each environment/account
+  Set-AWSCredential -AccessKey ExampleAccessKey -SecretKey ExampleSecretKey -StoreAs <program_account_user>
+  ```

@@ -5,6 +5,10 @@ Import-Module -Name 'Color'
 #endregion
 
 #region MISC
+
+# set default aws region
+Set-DefaultAWSRegion -Region 'us-west-2'
+
 #endregion
 
 #region FUNCTIONS
