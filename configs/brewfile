@@ -60,33 +60,20 @@ cask "hiddenbar"
 cask "microsoft-auto-update"
 # Explorer for Azure Storage
 cask "microsoft-azure-storage-explorer"
-# Spreadsheet software
-#cask "microsoft-excel"
-# Email client
-#cask "microsoft-outlook"
 # Remote desktop client
 cask "microsoft-remote-desktop"
-# Meet, chat, call, and collaborate in just one place
-#cask "microsoft-teams"
-#cask "microsoft-word"
-# Cloud storage client
-#cask "onedrive"
-# Desktop virtualization software
-#cask "parallels"
-# Home media player
-#cask "plex"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
 # Centralizes all remote connections on a single platform
-#cask "remote-desktop-manager"
+cask "remote-desktop-manager-free"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Open-source code editor
 cask "visual-studio-code"
-# Multimedia player
-#cask "vlc"
+# Mesh VPN based on Wireguard
+cask "tailscale"
 
 ### EXTRAS ###
 
@@ -98,4 +85,3 @@ cask "visual-studio-code"
 # Microsoft OneNote
 # Snagit
 # Pulse Secure
-# Tailscale

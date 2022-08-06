@@ -106,3 +106,11 @@ When complete, there are a handful of remaining tasks left to complete manually 
   # create profiles for each environment/account
   Set-AWSCredential -AccessKey ExampleAccessKey -SecretKey ExampleSecretKey -StoreAs <program_account_user>
   ```
+
+- Setup Postman
+  - Export data dump from existing setup
+  - Import into new system
+
+- Setup RDM
+  - Export connections from existing setup
+  - Import into new system
