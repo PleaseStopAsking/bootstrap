@@ -114,3 +114,36 @@ When complete, there are a handful of remaining tasks left to complete manually 
 - Setup RDM
   - Export connections from existing setup
   - Import into new system
+
+- Setup SSH Key
+  - Create a new SSH key-pair in 1Password
+  - Export the public key to your local machine and rename it to something more descriptive
+  - Upload key to GitHub
+  - Copy key to each host its needed on
+  
+    ```bash
+    # uses -f as ssh-copy-id can fail if matching private key is not found beside public key
+    ssh-copy-id -f -i ~/Downloads/personal.pub user@host
+    ```
+
+  - Delete local copy of public key from new system
+  - Enable 1Password SSH Agent
+  - Configure `~/.ssh/config`
+
+    ```bash
+    # remove all leading whitespace from last line when copying into terminal or will fail
+    tee ~/.ssh/config <<EOF
+    Host *
+     IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+    
+    Host exampleName01
+      HostName 192.168.4.46
+      User foo
+      ForwardAgent yes
+
+    Host exampleName02
+      HostName 192.168.4.71
+      User foo
+      ForwardAgent yes
+    EOF
+    ```
