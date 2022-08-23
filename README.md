@@ -34,12 +34,24 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Hidden Bar
   - Move icons as necessary
+  - First day of week: Monday
+  - Hide Icon
+  - Format: E MMM d h:mm a
+
+- Itsycal
+  - Launch at Login
 
 - Configure misc settings
   - System Preferences > General
     - Prefer Tabs: always
   - Dock & Menu Bar
     - Control Center
+    - Menu Bar Only
+      - Clock
+        - Date Options
+          - Show date: never
+        - Time Options
+          - Analog
   - Extensions
     - Remove unused
 

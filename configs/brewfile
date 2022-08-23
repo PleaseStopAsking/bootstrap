@@ -59,6 +59,8 @@ cask "docker"
 cask "firefox"
 # Utility to hide menu bar items
 cask "hiddenbar"
+# Menu bar calendar
+cask "itsycal"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Explorer for Azure Storage
