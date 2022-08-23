@@ -1,2 +1,3 @@
 dotfiles/.extra
 configs/brewfile.lock.json
+.dccache
