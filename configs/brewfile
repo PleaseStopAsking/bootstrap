@@ -51,8 +51,6 @@ cask "appcleaner"
 cask "balenaetcher"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Free and open-source web browser
-cask "chromium"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Web browser

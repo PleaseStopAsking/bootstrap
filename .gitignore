@@ -1,3 +1,4 @@
 dotfiles/.extra
 configs/brewfile.lock.json
 .dccache
+.DS_Store
