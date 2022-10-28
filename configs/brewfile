@@ -39,7 +39,7 @@ brew "bicep"
 # Azure Functions Core Tools 4.0
 #brew "azure/functions/azure-functions-core-tools@4"
 # Find & fix known vulnerabilities in open-source dependencies
-#brew "snyk/tap/snyk"
+brew "snyk/tap/snyk"
 
 ### CASKS ###
 
@@ -77,6 +77,8 @@ cask "rectangle"
 cask "visual-studio-code"
 # Mesh VPN based on Wireguard
 cask "tailscale"
+# Mux and tag mp4 files
+cask "subler"
 
 ### EXTRAS ###
 
