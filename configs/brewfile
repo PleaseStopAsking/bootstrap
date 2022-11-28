@@ -63,14 +63,12 @@ cask "itsycal"
 cask "microsoft-auto-update"
 # Explorer for Azure Storage
 cask "microsoft-azure-storage-explorer"
-# Remote desktop client
-cask "microsoft-remote-desktop"
 # Collaboration platform for API development
 cask "postman"
 # Command-line shell and scripting language
 cask "powershell"
 # Centralizes all remote connections on a single platform
-cask "remote-desktop-manager-free"
+cask "remote-desktop-manager"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Open-source code editor
