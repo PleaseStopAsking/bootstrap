@@ -40,6 +40,8 @@ brew "bicep"
 #brew "azure/functions/azure-functions-core-tools@4"
 # Find & fix known vulnerabilities in open-source dependencies
 brew "snyk/tap/snyk"
+# Fast, efficient and secure backup program
+brew "restic"
 
 ### CASKS ###
 
