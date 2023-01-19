@@ -25,7 +25,7 @@ brew "act"
 # Tool to measure maximum TCP and UDP bandwidth
 #brew "iperf"
 # Play, record, convert, and stream audio and video
-#brew "ffmpeg" # used by yt-dlp
+brew "ffmpeg" # used by yt-dlp
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Mac App Store command-line interface
@@ -35,7 +35,7 @@ brew "bicep"
 # Internet file retriever
 #brew "wget"
 # Fork of youtube-dl with additional features and fixes
-#brew "yt-dlp"
+brew "yt-dlp"
 # Azure Functions Core Tools 4.0
 #brew "azure/functions/azure-functions-core-tools@4"
 # Find & fix known vulnerabilities in open-source dependencies
