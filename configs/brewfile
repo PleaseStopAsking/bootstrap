@@ -21,7 +21,7 @@ tap "snyk/tap"
 # Run your GitHub Actions locally 🚀
 brew "act"
 # Official Amazon AWS command-line interface
-#brew "awscli"
+brew "awscli"
 # Tool to measure maximum TCP and UDP bandwidth
 #brew "iperf"
 # Play, record, convert, and stream audio and video
@@ -37,7 +37,7 @@ brew "bicep"
 # Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
 # Azure Functions Core Tools 4.0
-#brew "azure/functions/azure-functions-core-tools@4"
+brew "azure/functions/azure-functions-core-tools@4"
 # Find & fix known vulnerabilities in open-source dependencies
 brew "snyk/tap/snyk"
 # Fast, efficient and secure backup program
@@ -79,14 +79,7 @@ cask "visual-studio-code"
 cask "tailscale"
 # Mux and tag mp4 files
 cask "subler"
-
-### EXTRAS ###
-
+# .NET SDK
+cask "dotnet-sdk"
 # Browser for SQLite databases
 #cask "db-browser-for-sqlite-nightly"
-
-
-### SOFTWARE NOT AVAILABLE IN BREW ###
-# Microsoft OneNote
-# Snagit
-# Pulse Secure
