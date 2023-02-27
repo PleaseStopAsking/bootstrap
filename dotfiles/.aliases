@@ -49,7 +49,7 @@ alias cls='clear'
 #alias week='date +%V'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; mas outdated; mas upgrade'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --greedy; brew cleanup; mas outdated; mas upgrade'
 
 # IP addresses
 #alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
