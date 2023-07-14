@@ -20,6 +20,8 @@ tap "snyk/tap"
 
 # Run your GitHub Actions locally 🚀
 brew "act"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Tool to measure maximum TCP and UDP bandwidth
