@@ -1,7 +1,11 @@
 #!/bin/sh
 
-# example usage
-#./init.sh "git name" "git email" "hostname"
+# personal example usage
+#./init.sh "configs/brewfile-personal" "Michael Hatcher" "replaceme@example.com" "Michael MacBook Air"
+
+# work example usage
+#./init.sh "configs/brewfile-work" "Michael Hatcher" "mhatcher@esri.com"
+
 
 echo "Installing Homebrew"
 if test ! $(which brew); then
@@ -11,13 +15,13 @@ fi
 /opt/homebrew/bin/brew update
 echo "Install Homebrew Packages"
 /opt/homebrew/bin/brew tap homebrew/bundle
-/opt/homebrew/bin/brew bundle --file configs/brewfile
+/opt/homebrew/bin/brew bundle --file $1
 /opt/homebrew/bin/brew cleanup
 
 echo "Configuring Git"
 git config --global core.editor $(which nano)
-git config --global user.name "$1"
-git config --global user.email "$2"
+git config --global user.name "$2"
+git config --global user.email "$3"
 git config --global init.defaultBranch main
 
 echo "Copying dot files to Home Directory"
@@ -40,18 +44,14 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
-
-# Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "$3"
-#sudo scutil --set HostName "$3"
-#sudo scutil --set LocalHostName "$3"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$3"
-
-# Disable the sound effects on boot
-#sudo nvram SystemAudioVolume=" "
-
-# Disable transparency in the menu bar and elsewhere on Yosemite
-#defaults write com.apple.universalaccess reduceTransparency -bool true
+if [ -n "$4" ]
+then
+	# Set computer name (as done via System Preferences → Sharing)
+	sudo scutil --set ComputerName "$4"
+	sudo scutil --set HostName "$4"
+	sudo scutil --set LocalHostName "$4"
+	sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$4"
+fi
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
@@ -77,14 +77,9 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# Disable the “Are you sure you want to open this application?” dialog
-#defaults write com.apple.LaunchServices LSQuarantine -bool false
-
 # Disable Resume system-wide
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
-# Disable automatic termination of inactive apps
-#defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true

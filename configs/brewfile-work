@@ -1,9 +1,6 @@
-##### EXAMPLES #####
-# Install: brew bundle install --no-lock
-# Sync system with brewfile: brew bundle --force cleanup
-# Create new brewfile from existing system: brew bundle dump --describe
-
-####################
+# install: brew bundle install --no-lock
+# sync system with brewfile: brew bundle --force cleanup
+# create new brewfile from existing system: brew bundle dump --describe
 
 cask_args appdir: "/Applications"
 
@@ -11,55 +8,34 @@ cask_args appdir: "/Applications"
 tap "azure/functions"
 tap "azure/bicep"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
+#tap "homebrew/cask"
+#tap "homebrew/cask-versions"
+#tap "homebrew/core"
 tap "snyk/tap"
 
-### BREWS ###
-
-# Run your GitHub Actions locally 🚀
+# Run your GitHub Actions locally
 brew "act"
-# Automate deployment, configuration, and upgrading
-brew "ansible"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# Tool to measure maximum TCP and UDP bandwidth
-#brew "iperf"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg" # used by yt-dlp
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Mac App Store command-line interface
 brew "mas"
 # Azure bicep
 brew "bicep"
-# Internet file retriever
-#brew "wget"
-# Fork of youtube-dl with additional features and fixes
-brew "yt-dlp"
 # Azure Functions Core Tools 4.0
 brew "azure/functions/azure-functions-core-tools@4"
 # Find & fix known vulnerabilities in open-source dependencies
 brew "snyk/tap/snyk"
-# Fast, efficient and secure backup program
-brew "restic"
-
-### CASKS ###
-
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application uninstaller
 cask "appcleaner"
 # Tool to flash OS images to SD cards & USB drives
-cask "balenaetcher"
-# Web browser focusing on privacy
 cask "brave-browser"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Web browser
-cask "firefox"
-# Utility to hide menu bar items
 cask "hiddenbar"
 # Menu bar calendar
 cask "itsycal"
@@ -77,11 +53,3 @@ cask "remote-desktop-manager"
 cask "rectangle"
 # Open-source code editor
 cask "visual-studio-code"
-# Mesh VPN based on Wireguard
-cask "tailscale"
-# Mux and tag mp4 files
-cask "subler"
-# .NET SDK
-cask "dotnet-sdk"
-# Browser for SQLite databases
-#cask "db-browser-for-sqlite-nightly"

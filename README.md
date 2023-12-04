@@ -10,8 +10,11 @@ To install these dotfiles without Git (assumed as this this is designed for sett
 # download
 cd; curl -L https://github.com/PleaseStopAsking/bootstrap/tarball/main | tar -xzv --strip-components 1
 
-# invoke
-./init.sh "gitName" "gitEmail"
+# invoke for personal machine
+./init.sh "configs/brewfile-personal" "Michael Hatcher" "replaceme@example.com" "Michael MacBook Air"
+
+# invoke for work machine
+./init.sh "configs/brewfile-work" "Michael Hatcher" "mhatcher@esri.com"
 ```
 
 When complete, there are a handful of remaining tasks left to complete manually until I can automate these as well.
@@ -24,7 +27,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - System Preferences > Internet Accounts
     - Apple ID
     - Email Provider
-      - enable mail, notes and reminders
+      - enable mail only
 
 - Install SF Mono font
   - <https://developer.apple.com/fonts/>
@@ -55,7 +58,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Extensions
     - Remove unused
 
-- Setup PowerShell
+- Setup PowerShell (`work only`)
 
   ```powershell
   ./init.ps1
@@ -70,7 +73,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Enable auto download of updates
   - Enable Compose V2
 
-- Remote Desktop Connection
+- Remote Desktop Connection (`work only`)
   - Credentials
   - Gateways
   - Hosts
@@ -79,30 +82,9 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Settings
   - Install extensions
     - 1Password
-    - Capitol One Eno
+    - Capitol One Eno (`personal only`)
 
-- Brave Browser
-  - Settings
-  - Import Bookmarks
-  - Install extensions
-    - 1Password
-    - My Apps Secure Sign-in Extension
-  - Enable SSO
-  
-    ```bash
-    # variables
-    DOMAINS="*.example.com, example.okta.com"
-    USER="user@example.com"
-
-    # create kerberos ticket
-    kinit $USER
-
-    # configure brave allowlists
-    defaults write com.brave.Browser AuthNegotiateDelegateAllowlist $DOMAINS
-    defaults write com.brave.Browser AuthServerAllowlist $DOMAINS
-    ```
-
-- Setup Azure access
+- Setup Azure access (`work only`)
 
   ```powershell
   Connect-AzAccount
@@ -112,18 +94,18 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
   ```
 
-- Setup AWS access
+- Setup AWS access (`work only`)
 
   ```powershell
   # create profiles for each environment/account
   Set-AWSCredential -AccessKey ExampleAccessKey -SecretKey ExampleSecretKey -StoreAs <program_account_user>
   ```
 
-- Setup Postman
+- Setup Postman (`work only`)
   - Export data dump from existing setup
   - Import into new system
 
-- Setup RDM
+- Setup RDM (`work only`)
   - Export connections from existing setup
   - Import into new system
 

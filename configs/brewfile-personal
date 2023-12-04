@@ -1,0 +1,40 @@
+# install: brew bundle install --no-lock
+# sync system with brewfile: brew bundle --force cleanup
+# create new brewfile from existing system: brew bundle dump --describe
+
+####################
+
+cask_args appdir: "/Applications"
+
+tap "homebrew/bundle"
+
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg" # used by yt-dlp
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
+# Mac App Store command-line interface
+brew "mas"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
+# High level CLI utility for restic
+brew "autorestic"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# Application uninstaller
+cask "appcleaner"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Utility to hide menu bar items
+cask "hiddenbar"
+# Menu bar calendar
+cask "itsycal"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Open-source code editor
+cask "visual-studio-code"
+# Mesh VPN based on Wireguard
+cask "tailscale"
