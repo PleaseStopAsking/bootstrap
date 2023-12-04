@@ -37,12 +37,13 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Hidden Bar
   - Move icons as necessary
-  - First day of week: Monday
-  - Hide Icon
-  - Format: E MMM d h:mm a
+  - Launch at Login
 
 - Itsycal
   - Launch at Login
+  - First day of week: Monday
+  - Hide Icon
+  - Format: E MMM d h:mm a
 
 - Configure misc settings
   - System Preferences > General
