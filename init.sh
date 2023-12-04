@@ -49,8 +49,6 @@ then
 	# Set computer name (as done via System Preferences → Sharing)
 	sudo scutil --set ComputerName "$4"
 	sudo scutil --set HostName "$4"
-	sudo scutil --set LocalHostName "$4"
-	sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$4"
 fi
 
 # Set sidebar icon size to medium
