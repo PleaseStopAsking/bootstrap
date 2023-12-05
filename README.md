@@ -46,6 +46,24 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Format: `E MMM d h:mm a`
 
 - Configure misc settings
+  - Finder
+    - Always open in list view: `Enabled`
+    - Browser in list view: `Enabled`
+    - Calculate all sizes: `Enabled`
+    - Use as Defaults: `True`
+    - Sidebar Items
+      - Favorites
+        - Applications
+        - Documents
+        - Downloads
+        - Movies
+        - Music
+        - Pictures
+      - iCloud
+        - iCloud Drive
+        - Shared
+      - Locations
+        - Connected Servers
   - Control Center
     - Menu Bar Only
       - Clock
