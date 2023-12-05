@@ -92,9 +92,19 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Docker
   - Sign-in to DockerHub
-  - Enable experimental features
-  - Enable auto download of updates
-  - Enable Compose V2
+  - Settings
+    - General
+      - Start Docker Desktop when you sign in to your computer: `Disabled`
+      - Open Docker Dashboard when Docker Desktop starts: `Disabled`
+      - Send usage statistics: `Disabled`
+    - Resources
+      - CPU Limit: `4`
+      - Memory Limit: `4GB`
+      - Swap: `1GB`
+    - Software Updates
+      - Automatically check for updates: `Enabled`
+      - Always download updates: `Enabled`
+    - Notifications: `Disabled`
 
 - Remote Desktop Connection (`work only`)
   - Credentials
@@ -129,7 +139,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Export connections from existing setup
   - Import into new system
 
-- Setup SSH Key
+- Setup SSH Key (`only required if a new key is needed`)
   - Create a new SSH key-pair in 1Password
   - Export the public key to your local machine and rename it to something more descriptive
   - Upload key to GitHub
@@ -148,7 +158,9 @@ When complete, there are a handful of remaining tasks left to complete manually 
     # remove all leading whitespace from last line when copying into terminal or will fail
     tee ~/.ssh/config <<EOF
     Host *
-     IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+      IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+      ServerAliveInterval 60
+      ServerAliveCountMax 240
     
     Host exampleName01
       HostName 192.168.4.46
