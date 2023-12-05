@@ -41,23 +41,27 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Itsycal
   - Launch at Login
-  - First day of week: Monday
+  - First day of week: `Monday`
   - Hide Icon
-  - Format: E MMM d h:mm a
+  - Format: `E MMM d h:mm a`
 
 - Configure misc settings
-  - System Preferences > General
-    - Prefer Tabs: always
-  - Dock & Menu Bar
-    - Control Center
+  - Control Center
     - Menu Bar Only
       - Clock
-        - Date Options
-          - Show date: never
-        - Time Options
-          - Analog
-  - Extensions
-    - Remove unused
+        - Show Date: `Never`
+        - Show the day of the week: `Disabled`
+        - Style: `Analog`
+      - Spotlight
+        - `Don't Show in Menu Bar`
+    - Recent documents, applications, and servers: `None`
+  - Desktop & Dock
+    - Widgets
+      - Show Widgets: `Disabled`
+    - Windows
+      - Prefer tabs when opening documents: `always`
+  - Lock Screen
+    - Require password after screen saver begins or display is turned off: `Immediately`
 
 - Setup PowerShell (`work only`)
 
@@ -81,9 +85,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Safari
   - Settings
-  - Install extensions
-    - 1Password
-    - Capitol One Eno (`personal only`)
 
 - Setup Azure access (`work only`)
 
