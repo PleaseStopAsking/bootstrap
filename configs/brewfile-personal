@@ -10,6 +10,8 @@ tap "homebrew/bundle"
 
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# Checks ansible playbooks for practices and behaviour
+brew ansible-lint
 # Play, record, convert, and stream audio and video
 brew "ffmpeg" # used by yt-dlp
 # Free (GNU) replacement for the Pico text editor
