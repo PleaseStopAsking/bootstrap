@@ -20,8 +20,6 @@ brew "nano"
 brew "mas"
 # Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
-# High level CLI utility for restic
-brew "autorestic"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Application uninstaller
