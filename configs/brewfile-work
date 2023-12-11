@@ -17,6 +17,8 @@ tap "snyk/tap"
 brew "act"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Azure Storage data transfer utility
+brew "azcopy"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Mac App Store command-line interface
