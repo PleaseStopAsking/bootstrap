@@ -34,6 +34,8 @@ cask "copilot"
 cask "docker"
 # Utility to hide menu bar items
 cask "hiddenbar"
+# Free and open-source media player
+cask "iina"
 # Menu bar calendar
 cask "itsycal"
 # Move and resize windows using keyboard shortcuts or snap areas
