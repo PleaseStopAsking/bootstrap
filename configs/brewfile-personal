@@ -8,39 +8,24 @@ cask_args appdir: "~/Applications"
 
 tap "homebrew/bundle"
 
-# Automate deployment, configuration, and upgrading
-brew "ansible"
-# Checks ansible playbooks for practices and behaviour
-brew "ansible-lint"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg" # used by yt-dlp
-# Free (GNU) replacement for the Pico text editor
-brew "nano"
-# Mac App Store command-line interface
-brew "mas"
-# Fast, efficient and secure backup program
-brew "restic"
-# Fork of youtube-dl with additional features and fixes
-brew "yt-dlp"
-# Password manager that keeps all passwords secure behind one password
+brew "ansible" # Automate deployment, configuration, and upgrading
+brew "ansible-lint" # Checks ansible playbooks for practices and behaviour
+brew "ffmpeg" # Play, record, convert, and stream audio and video (used by yt-dlp)
+brew "nano" # Free (GNU) replacement for the Pico text editor
+brew "mas" # Mac App Store command-line interface
+brew "restic" # Fast, efficient and secure backup program
+brew "yt-dlp" # Fork of youtube-dl with additional features and fixes
+
 cask "1password", args: { appdir: "/Applications" }
-# Application uninstaller
+cask "1password-cli"
 cask "appcleaner"
-# Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Track and budget money
 cask "copilot"
-# App to build and share containerized applications and microservices
 cask "docker"
-# Utility to hide menu bar items
 cask "hiddenbar"
-# Free and open-source media player
 cask "iina"
-# Menu bar calendar
 cask "itsycal"
-# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Open-source code editor
 cask "visual-studio-code"
 
 mas "1Password for Safari", id: 1569813296
@@ -49,5 +34,5 @@ mas "iMovie", id: 408981434
 mas "Mela", id: 1568924476
 mas "Prologue", id: 1459223267
 mas "Reeder", id: 1529448980
-mas "ServerCat", id: 1501532023
 mas "Tailscale", id: 1475387142
+mas "WebSSH", id: 497714887
