@@ -135,10 +135,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Export data dump from existing setup
   - Import into new system
 
-- Setup RDM (`work only`)
-  - Export connections from existing setup
-  - Import into new system
-
 - Setup SSH Key (`only required if a new key is needed`)
   - Create a new SSH key-pair in 1Password
   - Export the public key to your local machine and rename it to something more descriptive
