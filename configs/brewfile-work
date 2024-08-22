@@ -5,25 +5,25 @@
 cask_args appdir: "/Applications"
 
 # taps
-tap "azure/functions"
-tap "azure/bicep"
+#tap "azure/functions"
+#tap "azure/bicep"
 tap "homebrew/bundle"
-#tap "homebrew/cask"
+tap "homebrew/cask"
 #tap "homebrew/cask-versions"
 #tap "homebrew/core"
-tap "snyk/tap"
+#tap "snyk/tap"
 
-brew "act" # Run your GitHub Actions locally
-brew "awscli" # Official Amazon AWS command-line interface
-brew "azcopy" # Azure Storage data transfer utility
-brew "bicep" # Next generation ARM templates
-brew "gh" # GitHub command-line tool
-brew "jq" # Lightweight and flexible command-line JSON processor
+#brew "act" # Run your GitHub Actions locally
+#brew "awscli" # Official Amazon AWS command-line interface
+#brew "azcopy" # Azure Storage data transfer utility
+#brew "bicep" # Next generation ARM templates
+#brew "gh" # GitHub command-line tool
+#brew "jq" # Lightweight and flexible command-line JSON processor
 brew "nano" # Free (GNU) replacement for the Pico text editor
 brew "mas" # Mac App Store command-line interface
-brew "bicep" # Azure bicep
-brew "azure/functions/azure-functions-core-tools@4" # Azure Functions Core Tools
-brew "snyk/tap/snyk" # Find & fix known vulnerabilities in open-source dependencies
+#brew "bicep" # Azure bicep
+#brew "azure/functions/azure-functions-core-tools@4" # Azure Functions Core Tools
+#brew "snyk/tap/snyk" # Find & fix known vulnerabilities in open-source dependencies
 
 cask "1password"
 cask "1password-cli"
@@ -34,9 +34,11 @@ cask "hiddenbar"
 cask "itsycal"
 cask "microsoft-auto-update"
 cask "microsoft-azure-storage-explorer"
-cask "microsoft-remote-desktop"
+#cask "microsoft-remote-desktop"
 cask "postman"
 cask "powershell"
 cask "rectangle"
-cask "session-manager-plugin"
+#cask "session-manager-plugin"
 cask "visual-studio-code"
+
+mas "1Password for Safari", id: 1569813296
