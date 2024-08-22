@@ -51,13 +51,3 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # print each PATH entry on a separate line
 alias readpath='echo -e ${PATH//:/\\n}'
-
-alias awslogin='aws sso login --sso-session mcssec'
-
-start_rdp_session() {
-    PROFILENAME=$1
-    HOSTNAME=$2
-
-    INSTANCE_ID=$(aws ssm describe-instance-information --profile $PROFILENAME | jq -r --arg HOSTNAME "$HOSTNAME" '.InstanceInformationList[] | {InstanceId, ComputerName, PingStatus} | select(.ComputerName | match($HOSTNAME;"i")) | .InstanceId')
-    aws ssm start-session --target "$INSTANCE_ID" --document-name 'MCS-RDP' --profile "$PROFILENAME"
-}
