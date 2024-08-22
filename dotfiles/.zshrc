@@ -11,7 +11,8 @@ done;
 unset file;
 
 # enable zsh autocompletion
-autoload -U compinit; compinit
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
 
 # disable autocorrect typos in path names when using `cd`
 unsetopt CORRECT;
