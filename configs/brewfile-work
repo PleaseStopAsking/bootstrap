@@ -6,7 +6,7 @@ cask_args appdir: "/Applications"
 
 # taps
 #tap "azure/functions"
-#tap "azure/bicep"
+tap "azure/bicep"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 #tap "homebrew/cask-versions"
@@ -21,7 +21,7 @@ tap "homebrew/cask"
 #brew "jq" # Lightweight and flexible command-line JSON processor
 brew "nano" # Free (GNU) replacement for the Pico text editor
 brew "mas" # Mac App Store command-line interface
-#brew "bicep" # Azure bicep
+brew "bicep" # Azure bicep
 #brew "azure/functions/azure-functions-core-tools@4" # Azure Functions Core Tools
 #brew "snyk/tap/snyk" # Find & fix known vulnerabilities in open-source dependencies
 
