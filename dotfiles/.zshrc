@@ -17,3 +17,5 @@ autoload -Uz compinit && compinit
 # disable autocorrect typos in path names when using `cd`
 unsetopt CORRECT;
 unsetopt CORRECT_ALL;
+
+eval "$(oh-my-posh init zsh --config ~/.omp-theme.json)"
