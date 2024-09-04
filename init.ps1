@@ -1,5 +1,4 @@
 $BaseModules = @{
-    'Color'               = 'latest'
     'Az'                  = 'latest'
 }
 
