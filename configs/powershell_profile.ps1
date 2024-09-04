@@ -1,10 +1,8 @@
-#Requires -Modules Color
-
 #region MODULES
-Import-Module -Name 'Color'
 #endregion
 
 #region MISC
+oh-my-posh init pwsh --config ~/.omp-theme.json | Invoke-Expression
 #endregion
 
 #region FUNCTIONS
