@@ -16,13 +16,13 @@ tap "homebrew/cask"
 #brew "act" # Run your GitHub Actions locally
 #brew "awscli" # Official Amazon AWS command-line interface
 #brew "azcopy" # Azure Storage data transfer utility
-#brew "bicep" # Next generation ARM templates
 #brew "gh" # GitHub command-line tool
 brew "jandedobbeleer/oh-my-posh/oh-my-posh" # Prompt theme engine for any shell
 #brew "jq" # Lightweight and flexible command-line JSON processor
 brew "nano" # Free (GNU) replacement for the Pico text editor
 brew "mas" # Mac App Store command-line interface
 brew "bicep" # Azure bicep
+brew "sops"
 #brew "azure/functions/azure-functions-core-tools@4" # Azure Functions Core Tools
 #brew "snyk/tap/snyk" # Find & fix known vulnerabilities in open-source dependencies
 
