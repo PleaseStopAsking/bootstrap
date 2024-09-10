@@ -13,6 +13,7 @@ tap "homebrew/cask"
 #tap "homebrew/core"
 #tap "snyk/tap"
 
+brew "azure-cli" # Microsoft Azure CLI 2.0
 #brew "act" # Run your GitHub Actions locally
 #brew "awscli" # Official Amazon AWS command-line interface
 #brew "azcopy" # Azure Storage data transfer utility
