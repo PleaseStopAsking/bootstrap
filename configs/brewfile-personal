@@ -16,8 +16,6 @@ brew "mas" # Mac App Store command-line interface
 brew "restic" # Fast, efficient and secure backup program
 brew "yt-dlp" # Fork of youtube-dl with additional features and fixes
 
-cask "1password", args: { appdir: "/Applications" }
-cask "1password-cli"
 cask "appcleaner"
 cask "balenaetcher"
 cask "copilot"
@@ -28,7 +26,6 @@ cask "itsycal"
 cask "rectangle"
 cask "visual-studio-code"
 
-mas "1Password for Safari", id: 1569813296
 mas "Eno From Capital One", id: 1590422864
 mas "iMovie", id: 408981434
 mas "Mela", id: 1568924476
