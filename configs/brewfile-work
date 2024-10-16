@@ -27,8 +27,6 @@ brew "sops"
 #brew "azure/functions/azure-functions-core-tools@4" # Azure Functions Core Tools
 #brew "snyk/tap/snyk" # Find & fix known vulnerabilities in open-source dependencies
 
-cask "1password"
-cask "1password-cli"
 cask "appcleaner"
 cask "brave-browser"
 cask "docker"
@@ -43,5 +41,3 @@ cask "powershell"
 cask "rectangle"
 #cask "session-manager-plugin"
 cask "visual-studio-code"
-
-mas "1Password for Safari", id: 1569813296
