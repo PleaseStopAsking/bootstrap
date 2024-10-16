@@ -21,8 +21,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 ### Sign-in & Configure
 
-- 1Password
-
 - Configure accounts
   - System Preferences > Internet Accounts
     - Apple ID
@@ -136,8 +134,7 @@ When complete, there are a handful of remaining tasks left to complete manually 
   - Import into new system
 
 - Setup SSH Key (`only required if a new key is needed`)
-  - Create a new SSH key-pair in 1Password
-  - Export the public key to your local machine and rename it to something more descriptive
+  - Create a new SSH key-pair
   - Upload key to GitHub
   - Copy key to each host its needed on
   
@@ -147,14 +144,15 @@ When complete, there are a handful of remaining tasks left to complete manually 
     ```
 
   - Delete local copy of public key from new system
-  - Enable 1Password SSH Agent
   - Configure `~/.ssh/config`
 
     ```bash
     # remove all leading whitespace from last line when copying into terminal or will fail
     tee ~/.ssh/config <<EOF
     Host *
-      IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+      AddKeysToAgent yes
+      UseKeychain yes
+      IdentityFile ~/.ssh/id_ed25519
       ServerAliveInterval 60
       ServerAliveCountMax 240
     
