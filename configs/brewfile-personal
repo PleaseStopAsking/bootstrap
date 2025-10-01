@@ -18,9 +18,7 @@ brew "yt-dlp" # Fork of youtube-dl with additional features and fixes
 
 cask "appcleaner"
 cask "balenaetcher"
-cask "copilot"
 cask "docker"
-cask "hiddenbar"
 cask "iina"
 cask "itsycal"
 cask "rectangle"
