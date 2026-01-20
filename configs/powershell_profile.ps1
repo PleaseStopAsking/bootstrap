@@ -2,6 +2,7 @@
 #endregion
 
 #region MISC
+if ($env:TERM_PROGRAM -eq 'vscode') { . "$(code --locate-shell-integration-path pwsh)" }
 oh-my-posh init pwsh --config ~/.omp-theme.json | Invoke-Expression
 #endregion
 
@@ -94,13 +95,13 @@ function Uninstall-OldModuleVersions {
 #region ALIASES
 
 # list all files/folder
-Set-Alias -Name 'l' -Value 'Get-ChildItem'
+Set-Alias -Name 'll' -Value 'Get-ChildItem'
 
 # Shortcuts
-Set-Alias -Name 'd' -Value 'Set-Location -Path ~/Documents'
-Set-Alias -Name 'dl' -Value 'Set-Location -Path ~/Downloads'
-Set-Alias -Name 'dt' -Value 'Set-Location -Path ~/Desktop'
-Set-Alias -Name 'p' -Value 'Set-Location -Path ~/Documents/Projects'
+Set-Alias -Name 'docs' -Value 'Set-Location -Path ~/Documents'
+Set-Alias -Name 'downloads' -Value 'Set-Location -Path ~/Downloads'
+Set-Alias -Name 'desktop' -Value 'Set-Location -Path ~/Desktop'
+Set-Alias -Name 'projects' -Value 'Set-Location -Path ~/Documents/Projects'
 
 #endregion
 
