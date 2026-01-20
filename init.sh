@@ -563,6 +563,8 @@ defaults write com.brave.Browser PMPrintingExpandedStateForPrint2 -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
+read -r -p "Press Enter to continue..."
+
 for app in "Activity Monitor" \
 	"Address Book" \
 	"Calendar" \
