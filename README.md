@@ -21,6 +21,9 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 ### Sign-in & Configure
 
+- Install software
+  - sops@v3.7.3 (`work only`)
+
 - Configure accounts
   - System Preferences > Internet Accounts
     - Apple ID
@@ -29,13 +32,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Install SF Mono font
   - <https://developer.apple.com/fonts/>
-
-- Rectangle
-  - Import config from [here](/configs/RectangleConfig.json)
-
-- Hidden Bar
-  - Move icons as necessary
-  - Launch at Login
 
 - Itsycal
   - Launch at Login
@@ -104,11 +100,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
       - Always download updates: `Enabled`
     - Notifications: `Disabled`
 
-- Remote Desktop Connection (`work only`)
-  - Credentials
-  - Gateways
-  - Hosts
-
 - Safari
   - Settings
 
@@ -121,17 +112,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
   Rename-AzContext -SourceName 'preChange' -TargetName 'postChange'
 
   ```
-
-- Setup AWS access (`work only`)
-
-  ```powershell
-  # create profiles for each environment/account
-  Set-AWSCredential -AccessKey ExampleAccessKey -SecretKey ExampleSecretKey -StoreAs <program_account_user>
-  ```
-
-- Setup Postman (`work only`)
-  - Export data dump from existing setup
-  - Import into new system
 
 - Setup SSH Key (`only required if a new key is needed`)
   - Create a new SSH key-pair
