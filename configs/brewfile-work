@@ -1,42 +1,69 @@
-# install: brew bundle install --no-lock
-# sync system with brewfile: brew bundle --force cleanup
-# create new brewfile from existing system: brew bundle dump --describe
-
-cask_args appdir: "/Applications"
-
-# taps
-#tap "azure/functions"
 tap "azure/bicep"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-#tap "homebrew/cask-versions"
-#tap "homebrew/core"
-#tap "snyk/tap"
+tap "jandedobbeleer/oh-my-posh"
 
-brew "azure-cli" # Microsoft Azure CLI 2.0
-#brew "act" # Run your GitHub Actions locally
-#brew "awscli" # Official Amazon AWS command-line interface
-#brew "azcopy" # Azure Storage data transfer utility
-#brew "gh" # GitHub command-line tool
-brew "jandedobbeleer/oh-my-posh/oh-my-posh" # Prompt theme engine for any shell
-#brew "jq" # Lightweight and flexible command-line JSON processor
-brew "nano" # Free (GNU) replacement for the Pico text editor
-brew "mas" # Mac App Store command-line interface
-brew "bicep" # Azure bicep
-brew "sops"
-#brew "azure/functions/azure-functions-core-tools@4" # Azure Functions Core Tools
-#brew "snyk/tap/snyk" # Find & fix known vulnerabilities in open-source dependencies
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Mac App Store command-line interface
+brew "mas"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
+# Bicep: next generation template language for Azure Resource Manager (ARM)
+brew "azure/bicep/bicep"
+# Prompt theme engine for any shell
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 
-cask "appcleaner"
-cask "brave-browser"
-cask "docker"
-cask "font-caskaydia-cove-nerd-font"
-cask "itsycal"
-cask "microsoft-auto-update"
-cask "microsoft-azure-storage-explorer"
-#cask "microsoft-remote-desktop"
-cask "postman"
-cask "powershell"
-cask "rectangle"
-#cask "session-manager-plugin"
-cask "visual-studio-code"
+# Application uninstaller
+cask "appcleaner", args: { appdir: "/Applications" }
+# Web browser focusing on privacy
+cask "brave-browser", args: { appdir: "/Applications" }
+# App to build and share containerised applications and microservices
+cask "docker-desktop", args: { appdir: "/Applications" }
+# Menu bar calendar
+cask "itsycal", args: { appdir: "/Applications" }
+# Password manager application and digital vault
+cask "keeper-password-manager"
+# Explorer for Azure Storage
+cask "microsoft-azure-storage-explorer", args: { appdir: "/Applications" }
+# Command-line shell and scripting language
+cask "powershell", args: { appdir: "/Applications" }
+# Open-source code editor
+cask "visual-studio-code", args: { appdir: "/Applications" }
+# Connect to Windows
+cask "windows-app"
+
+mas "Reeder", id: 1529448980
+
+vscode "docker.docker"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.remotehub"
+vscode "github.vscode-github-actions"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "mhutchie.git-graph"
+vscode "ms-azuretools.vscode-azureappservice"
+vscode "ms-azuretools.vscode-azurefunctions"
+vscode "ms-azuretools.vscode-azureresourcegroups"
+vscode "ms-azuretools.vscode-azurestorage"
+vscode "ms-azuretools.vscode-azurevirtualmachines"
+vscode "ms-azuretools.vscode-bicep"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.azurecli"
+vscode "ms-vscode.live-server"
+vscode "ms-vscode.powershell"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-repositories"
+vscode "redhat.ansible"
+vscode "redhat.vscode-xml"
+vscode "redhat.vscode-yaml"
+vscode "tylerleonhardt.vscode-inline-values-powershell"
