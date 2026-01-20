@@ -32,6 +32,7 @@ cask "visual-studio-code", args: { appdir: "/Applications" }
 # Connect to Windows
 cask "windows-app"
 
+# RSS reader app
 mas "Reeder", id: 1529448980
 
 vscode "docker.docker"
