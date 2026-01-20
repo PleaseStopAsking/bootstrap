@@ -6,8 +6,6 @@
 
 cask_args appdir: "~/Applications"
 
-tap "homebrew/bundle"
-
 brew "ansible" # Automate deployment, configuration, and upgrading
 brew "ansible-lint" # Checks ansible playbooks for practices and behaviour
 brew "ffmpeg" # Play, record, convert, and stream audio and video (used by yt-dlp)
