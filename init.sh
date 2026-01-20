@@ -23,6 +23,8 @@ git config --global core.editor $(which nano)
 git config --global user.name "$2"
 git config --global user.email "$3"
 git config --global init.defaultBranch main
+git config --global http.postBuffer 2097152000
+git config --global https.postBuffer 2097152000
 
 echo "Copying dot files to Home Directory"
 read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
