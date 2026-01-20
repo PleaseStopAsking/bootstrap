@@ -14,7 +14,6 @@ fi
 
 /opt/homebrew/bin/brew update
 echo "Install Homebrew Packages"
-/opt/homebrew/bin/brew tap homebrew/bundle
 /opt/homebrew/bin/brew bundle --file $1
 /opt/homebrew/bin/brew cleanup
 
