@@ -1,62 +1,61 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "background": "#1f363d",
-          "foreground": "#ffffff",
           "style": "diamond",
-          "template": " {{ if .SSHSession }}\ueba9 {{ .UserName }}@{{ .HostName }} {{else}} {{ .UserName }} {{ end }} ",
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "\ue0b4 ",
-          "type": "session",
-          "invert_powerline": false
+          "template": " {{ if .SSHSession }}\ueba9 {{ .UserName }}@{{ .HostName }} {{else}} {{ .UserName }} {{ end }} ",
+          "foreground": "#ffffff",
+          "background": "#1f363d",
+          "type": "session"
         },
         {
-          "background": "#40798c",
-          "foreground": "#ffffff",
-          "leading_diamond": "\ue0b6",
-          "trailing_diamond": "\ue0b0",
-          "properties": {
+          "options": {
             "style": "agnoster_full"
           },
           "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
           "template": " {{ .Path }} ",
+          "foreground": "#ffffff",
+          "background": "#40798c",
           "type": "path"
         }
-      ],
-      "type": "prompt"
+      ]
     },
     {
+      "type": "rprompt",
       "alignment": "right",
       "segments": [
         {
-          "background": "#9ec1a3",
-          "foreground": "#ffffff",
           "style": "plain",
           "template": "<#9ec1a3,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,#9ec1a3>\ue0b2</>",
+          "foreground": "#ffffff",
+          "background": "#9ec1a3",
           "type": "shell"
         },
         {
-          "background": "#cfe0c3",
-          "foreground": "#111111",
-          "properties": {
+          "options": {
             "style": "austin",
             "threshold": 0
           },
           "style": "diamond",
-          "template": " {{ .FormattedMs }} <#cfe0c3>\ue601</>",
-          "type": "executiontime",
           "leading_diamond": "\ue0b2",
-          "trailing_diamond": "\ue0b4"
+          "trailing_diamond": "\ue0b4",
+          "template": " {{ .FormattedMs }} <#cfe0c3>\ue601</>",
+          "foreground": "#111111",
+          "background": "#cfe0c3",
+          "type": "executiontime"
         }
-      ],
-      "type": "rprompt"
+      ]
     }
   ],
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
-  "final_space": true,
-  "version": 2
+  "version": 3,
+  "final_space": true
 }
