@@ -1,5 +1,6 @@
 $BaseModules = @{
-    'Az'                  = 'latest'
+    'Az'                        = '12.3.0'
+    'EnterprisePolicyAsCode'    = '10.5.8'
 }
 
 # set psgallery as trusted
@@ -21,3 +22,4 @@ if (!(Test-Path $ProfilePath)) {
     New-Item -Path $ProfilePath -ItemType 'Directory' -Force | Out-Null
 }
 Copy-Item -Path ./configs/powershell_profile.ps1 -Destination $Profile
+Write-Host "Make sure to update the profile to include any module imports"
