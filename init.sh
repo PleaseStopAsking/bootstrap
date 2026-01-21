@@ -214,6 +214,9 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
+# List view settings
+defaults write com.apple.finder StandardViewSettings -dict-add ListViewSettings '{calculateAllSizes = 1; useRelativeDates = 1; sortColumn = name; sortDirection = 1;}'
+
 # Finder: show hidden files by default
 #defaults write com.apple.finder AppleShowAllFiles -bool true
 
