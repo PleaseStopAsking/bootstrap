@@ -21,17 +21,11 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 ### Sign-in & Configure
 
-- Install software
-  - sops@v3.7.3 (`work only`)
-
 - Configure accounts
   - System Preferences > Internet Accounts
     - Apple ID
     - Email Provider
       - enable mail only
-
-- Install SF Mono font
-  - <https://developer.apple.com/fonts/>
 
 - Itsycal
   - Launch at Login
@@ -55,12 +49,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
       - Locations
         - Connected Servers
 
-- Setup PowerShell (`work only`)
-
-  ```powershell
-  ./init.ps1
-  ```
-
 - VSCode
   - Sign-in via GitHub to sync settings and extensions
 
@@ -83,27 +71,9 @@ When complete, there are a handful of remaining tasks left to complete manually 
 - Safari
   - Settings
 
-- Setup Azure access (`work only`)
-
-  ```powershell
-  Connect-AzAccount
-
-  # rename contexts to easier to use names as necessary
-  Rename-AzContext -SourceName 'preChange' -TargetName 'postChange'
-
-  ```
-
-- Setup SSH Key (`only required if a new key is needed`)
+- Setup SSH Key (`only required if new key is needed`)
   - Create a new SSH key-pair
-  - Upload key to GitHub
-  - Copy key to each host its needed on
-  
-    ```bash
-    # uses -f as ssh-copy-id can fail if matching private key is not found beside public key
-    ssh-copy-id -f -i ~/Downloads/personal.pub user@host
-    ```
-
-  - Delete local copy of public key from new system
+  - Upload public key to GitHub
   - Configure `~/.ssh/config`
 
     ```bash
@@ -126,4 +96,23 @@ When complete, there are a handful of remaining tasks left to complete manually 
       User foo
       ForwardAgent yes
     EOF
+    ```
+
+- Work Specific
+  - Setup PowerShell
+    ```powershell
+    ./init.ps1
+    ```
+  - Install Software
+    - SOPS
+      ```
+      curl -LO https://github.com/getsops/sops/releases/download/v3.7.3/sops-v3.7.3.darwin.arm64 && chmod +x sops-v3.7.3.darwin.* && sudo mv sops-v3.7.3.darwin.* /usr/local/bin/sops
+      ```
+
+- Setup Azure access
+    ```powershell
+    Connect-AzAccount
+  
+    # rename contexts to easier to use names as necessary
+    Rename-AzContext -SourceName 'preChange' -TargetName 'postChange'
     ```
