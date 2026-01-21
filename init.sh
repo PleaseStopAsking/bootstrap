@@ -52,6 +52,9 @@ then
 	sudo scutil --set HostName "$4"
 fi
 
+# always use tabs in windows
+defaults write NSGlobalDomain AppleWindowTabbingMode -string "always"
+
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
@@ -78,7 +81,6 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 # Disable Resume system-wide
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
-
 
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
@@ -356,6 +358,21 @@ defaults write com.apple.dock showAppExposeGestureEnabled -int 1
 #defaults write com.apple.dock wvous-bl-corner -int 5
 #defaults write com.apple.dock wvous-bl-modifier -int 0
 
+# disable desktop widgets
+defaults write com.apple.WindowManager StandardDesktopWidgets -bool false
+
+# disable desktop widgets
+defaults write com.apple.WindowManager StandardDockWidgets -bool false
+
+# hide spotlight from control center
+defaults write com.apple.controlcenter "NSStatusItem Visible Spotlight" -bool false
+
+# Use analog clock
+defaults write com.apple.menuextra.clock IsAnalog -bool true
+
+# Ensure no date or weekday text is shown
+defaults write com.apple.menuextra.clock ShowDate -int 0
+defaults write com.apple.menuextra.clock DateFormat -string ""
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
