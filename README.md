@@ -41,10 +41,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
 
 - Configure misc settings
   - Finder
-    - Always open in list view: `Enabled`
-    - Browser in list view: `Enabled`
-    - Calculate all sizes: `Enabled`
-    - Use as Defaults: `True`
     - Sidebar Items
       - Favorites
         - Applications
