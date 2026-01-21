@@ -18,6 +18,8 @@ cask "appcleaner", args: { appdir: "/Applications" }
 cask "brave-browser", args: { appdir: "/Applications" }
 # App to build and share containerised applications and microservices
 cask "docker-desktop", args: { appdir: "/Applications" }
+# FiraCode Nerd Font (required for oh-my-posh)
+cask font-fira-code-nerd-font
 # Menu bar calendar
 cask "itsycal", args: { appdir: "/Applications" }
 # Password manager application and digital vault
