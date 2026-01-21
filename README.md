@@ -54,22 +54,6 @@ When complete, there are a handful of remaining tasks left to complete manually 
         - Shared
       - Locations
         - Connected Servers
-  - Control Center
-    - Menu Bar Only
-      - Clock
-        - Show Date: `Never`
-        - Show the day of the week: `Disabled`
-        - Style: `Analog`
-      - Spotlight
-        - `Don't Show in Menu Bar`
-    - Recent documents, applications, and servers: `None`
-  - Desktop & Dock
-    - Widgets
-      - Show Widgets: `Disabled`
-    - Windows
-      - Prefer tabs when opening documents: `always`
-  - Lock Screen
-    - Require password after screen saver begins or display is turned off: `Immediately`
 
 - Setup PowerShell (`work only`)
 
