@@ -446,6 +446,9 @@ defaults write com.apple.terminal StringEncodings -array 4
 defaults write com.apple.terminal "Default Window Settings" -string "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
 
+# Set font for profile
+PROFILE="Homebrew"; FONT_NAME="FiraCode Nerd Font"; FONT_SIZE=12; osascript -e "tell application \"Terminal\" to set font name of settings set \"$PROFILE\" to \"$FONT_NAME\"" -e "tell application \"Terminal\" to set font size of settings set \"$PROFILE\" to $FONT_SIZE"
+
 # Enable Secure Keyboard Entry in Terminal.app
 # See: https://security.stackexchange.com/a/47786/8918
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
