@@ -19,11 +19,9 @@ cask "balenaetcher"
 cask "docker"
 cask "iina"
 cask "itsycal"
-cask "rectangle"
 cask "visual-studio-code"
 
 mas "Eno From Capital One", id: 1590422864
-mas "iMovie", id: 408981434
 mas "Mela", id: 1568924476
 mas "Prologue", id: 1459223267
 mas "Reeder", id: 1529448980
